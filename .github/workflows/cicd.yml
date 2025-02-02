@@ -21,7 +21,7 @@ jobs:
   test-and-build:
     runs-on: ubuntu-latest
     defaults:
-      runs:
+      run:
         working-directory: cicd-section/api
     steps:
       # Checkout code
