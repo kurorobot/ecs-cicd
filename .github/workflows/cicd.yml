@@ -77,7 +77,7 @@ jobs:
 
       - name: Define the image URI
         run: |
-          echo "API_IMAGE_URI"=$(cat artifacts/api-image-uri.txt)" >> $GITHUB_ENV
+          echo "API_IMAGE_URI=$(cat artifacts/api-image-uri.txt)" >> $GITHUB_ENV
 
       - name: Fill in the new image URI in the amazon ECS task definition
         id: render-task-def
